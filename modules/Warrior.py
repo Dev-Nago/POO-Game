@@ -1,4 +1,5 @@
 from modules.Character import *
+import time
 
 class Warrior(Character):
     def __init__(self, name) -> None:
@@ -18,3 +19,4 @@ class Warrior(Character):
             print("* ",defendant.name," perd ", damage, " points de vie par attaque ! *")
             print("*",defendant.name," a perdu au total ",total_damage," à la suite du Whirlwind de ",attacker.name,"*")
             print(" -- ",defendant.name," a ",defendant.hp," points de vie restant. ---\n")
+            time.sleep(1)
