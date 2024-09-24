@@ -17,9 +17,14 @@ def game():
     nom_defendant = input("Quel est le nom de votre Rival ?\n")
     time.sleep(1)
     classe = input("Choisir votre classe : A = Magicien, B = Guerrier, C = Archer\n")
-    time.sleep(1)
+    time.sleep(2)
     attacker = create_player(nom_attacker,classe)
     defendant = create_ia(nom_defendant)
+    print("__ ",attacker.name," est un ",attacker.__class__.__name__," avec ",attacker.hp,"HP ",attacker.attack,"Attaque et ",attacker.defense,"Defense. __")
+    print("__ ",defendant.name," est un ",defendant.__class__.__name__," avec ",defendant.hp,"HP ",defendant.attack,"Attaque et ",defendant.defense,"Defense. __\n")
+    time.sleep(2)
+    print("Que le combat commence...\n")
+    time.sleep(2)
 
     while attacker.check_death(defendant) or defendant.check_death(attacker):
             player(attacker,defendant)
