@@ -1,19 +1,24 @@
 class Character:
-    def __init__(self,name) -> None:
+    def __init__(self,name):
         self.name = name
         self.potion = 3
+
+    def check_death(self,defendant):
+        if getattr(defendant,"hp") < 1:
+            print("Le personnage ",defendant.name," est mort.")
+            return False
+        else:
+            return True
 
     def showHP(self,character):
         print(character.name," a ",character.hp," points de vie.")
         
-    def attack_launch(self,attacker,defendant):
+    def normal_attack(self,attacker,defendant):
         damage = defendant.defense - attacker.attack / 2
         actual_hp = defendant.hp - damage
         setattr(defendant,"hp",actual_hp)
         print("***",attacker.name," lance une attaque sur ",defendant.name,"***")
         print("*",defendant.name," a perdu ",damage," à la suite d'une attaque de ",attacker.name,"*")
-        if getattr(defendant,"hp") < 1:
-            print("Le personnage ",defendant.name," est mort.")
 
     def healthPotion(self,character):
         if character.potion > 0:
