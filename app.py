@@ -6,7 +6,6 @@ from modules.player import *
 from modules.ia import *
 from modules.create_player import *
 from modules.create_ia import *
-import sys
 import numpy as np
 import time
 
