@@ -10,5 +10,6 @@ class Wizard(Character):
         damage = defendant.defense - attacker.attack / 4
         actual_hp = defendant.hp - damage
         setattr(defendant,"hp",actual_hp)
-        print("***",attacker.name," lance un Blizzard sur ",defendant.name,"***\n")
-        print("*",defendant.name," a perdu ",damage," à la suite du Blizzard de ",attacker.name,"*\n")
+        print("***",attacker.name," lance un Blizzard sur ",defendant.name,"***")
+        print("*",defendant.name," a perdu ",damage," à la suite du Blizzard de ",attacker.name,"*")
+        print(" -- ",defendant.name," a ",defendant.hp," points de vie restant. ---\n")

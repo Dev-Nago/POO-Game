@@ -1,4 +1,3 @@
-import time
 import numpy as np
 from modules.Character import *
 from modules.Wizard import *

@@ -8,7 +8,7 @@ from modules.Archer import *
 def player(attacker,defendant):
       ######### JOUEUR ##########
         print("Choisir votre attaque...")
-        attaque = input("A = Attaque normal, B = Attaque Spéciale\n")
+        attaque = input("A = Attaque normal, B = Attaque Spéciale, C = Boost Attaque, D = Potion(200HP)\n")
         time.sleep(1)
         if attaque == "A":
             print("--- JOUEUR ---\n")
@@ -27,6 +27,10 @@ def player(attacker,defendant):
                 print("--- JOUEUR ---\n")
                 attacker.salve(attacker,defendant)
                 attacker.check_death(defendant)
+        elif attaque == "C":
+            attacker.boost_attack(attacker)
+        elif attaque == "D":
+             attacker.healthPotion(attacker)
         else:
             print("Mauvaise Lettre, A ou B seulelment.\n")
         ######### JOUEUR #########

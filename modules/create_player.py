@@ -1,11 +1,10 @@
-import time
 import numpy as np
 from modules.Character import *
 from modules.Wizard import *
 from modules.Warrior import *
 from modules.Archer import *
 
-def create_char(nom_attacker,classe):
+def create_player(nom_attacker,classe):
     if classe == "A":
         attacker = Wizard(nom_attacker)
     elif classe == "B":

@@ -14,6 +14,7 @@ class Warrior(Character):
             total_damage += damage
             actual_hp = defendant.hp - damage
             setattr(defendant,"hp",actual_hp)
-            print("***",attacker.name," lance un Whirlwind (",i,"/ 3 ) sur ",defendant.name,"***\n")
-            print("* ",defendant.name," perd ", damage, " points de vie par attaque ! *\n")
-            print("*",defendant.name," a perdu au total ",total_damage," à la suite du Whirlwind de ",attacker.name,"*\n")
+            print("***",attacker.name," lance un Whirlwind (",i,"/ 3 ) sur ",defendant.name,"***")
+            print("* ",defendant.name," perd ", damage, " points de vie par attaque ! *")
+            print("*",defendant.name," a perdu au total ",total_damage," à la suite du Whirlwind de ",attacker.name,"*")
+            print(" -- ",defendant.name," a ",defendant.hp," points de vie restant. ---\n")
