@@ -29,4 +29,5 @@ def game():
             player(attacker,defendant)
             ia(defendant,attacker)
         
-game()
+if __name__ == "__main__":
+    game()
