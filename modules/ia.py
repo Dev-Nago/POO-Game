@@ -8,43 +8,43 @@ def ia(defendant,attacker):
         if defendant.__class__.__name__ == "Wizard":
             choice = np.random.choice(ia_choice)
             if choice == "A":
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.normal_attack(defendant,attacker)
                 defendant.check_death(attacker)
             elif choice == "B":
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.blizzard(defendant,attacker)
                 defendant.check_death(attacker)
             else:
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.boost_attack(defendant)
         if defendant.__class__.__name__ == "Warrior":
             choice = np.random.choice(ia_choice)
             if choice == "A":
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.normal_attack(defendant,attacker)
                 defendant.check_death(attacker)
             elif choice == "B":
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.whirlwind(defendant,attacker)
                 defendant.check_death(attacker)
             else:
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.boost_attack(defendant)
         if defendant.__class__.__name__ == "Archer":
             choice = np.random.choice(ia_choice)
             if choice == "A":
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.normal_attack(defendant,attacker)
                 defendant.check_death(attacker)
             elif choice == "B":
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.salve(defendant,attacker)
                 defendant.check_death(attacker)
             elif choice == "D":
              defendant.healthPotion(defendant)
             else:
-                print("--- IA ---\n")
+                print("--- IA ---")
                 defendant.boost_attack(defendant)
         time.sleep(3)
         ##########################

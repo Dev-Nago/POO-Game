@@ -7,7 +7,7 @@ class Character:
 
     def check_death(self,defendant):
         if getattr(defendant,"hp") < 1:
-            print("Le personnage ",defendant.name," est mort.\n")
+            print("Le personnage ",defendant.name," est mort.")
             print("*** Bravo ***")
             print("Partie Terminée. Exit...")
             sys.exit()
