@@ -7,7 +7,7 @@ from modules.Archer import *
 
 def player(attacker,defendant):
       ######### JOUEUR ##########
-        print("Choisir votre attaque...")
+        print("Action...")
         attaque = input("A = Attaque normal, B = Attaque Spéciale, C = Boost Attaque, D = Potion(200HP)\n")
         time.sleep(1)
         if attaque == "A":
