@@ -38,7 +38,7 @@ class Character:
 
     def boost_attack(self, character):
         if character.hp > 200:
-            boost_attack = character.attack + 20
+            boost_attack = character.attack + 10
             setattr(character, "attack", boost_attack)
             losthp = character.hp - 50
             setattr(character,"hp",losthp)
