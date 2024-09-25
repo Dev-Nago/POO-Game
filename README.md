@@ -6,14 +6,14 @@ Ce projet a permis de travailler la programmation orientée objet en mettant en 
 
 ## Structure du Projet
 
-1.  'Character.py': Contient la classe principale 
-2.  'Archer.py' : Definit la classe archer
-3.  'Warrior.py' : Definit la classe guerrier
-4.  'Wizard.py' : Definit la classe magicien
-5.  'create_player' : Definit les functions de creation des personnages
-6.  'create_ia.py' : Definit les functions de creation de l'ia
-7.  'player.py' : Definit les functions du joueur 
-8.  'ia.py': Definit les functions de l'ia
+1.  `Character.py`: Contient la classe principale 
+2.  `Archer.py` : Definit la classe archer
+3.  `Warrior.py` : Definit la classe guerrier
+4.  `Wizard.py` : Definit la classe magicien
+5.  `create_player` : Definit les functions de creation des personnages
+6.  `create_ia.py` : Definit les functions de creation de l'ia
+7.  `player.py` : Definit les functions du joueur 
+8.  `ia.py`: Definit les functions de l'ia
 
 
 ## Technologies utilisées 
