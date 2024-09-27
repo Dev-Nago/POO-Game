@@ -1,5 +1,9 @@
 # POO Mini Game
 
+## Game
+`Le jeu consiste en une mini bataille 1vs1 contre l'IA, vous rentrez votre nom, choisissez votre classe (Magicien, Guerrier, Archer...), donnez un nom à votre rival (IA) et votre combat à mort commence. Vous avez une attaque normale, une attaque spéciale par classe, un boost d'attaque (sacrifie points de vie pour attaque améliorée) et enfin des potions (200hp).`
+**Qui sortiera le grand vainqueur ? Vous ou l'IA ?**
+
 ## Introduction
 
 Ce projet a permis de travailler la programmation orientée objet en mettant en pratique les différents concepts comme les méthodes de classe, héritage, attributs, les accesseurs (getter, setter), boucles et condition.
@@ -25,11 +29,12 @@ Ce projet a permis de travailler la programmation orientée objet en mettant en 
 # Intallation 
 
 * pip install -r requirements.txt
-## Environnement Virtuel
+## Environnement Virtuel :
 * python -m venv .venv
 * Activate
 * MacOS : source .venv/bin/activate
 * Win : .venv/Scripts/bin/activate
+
 
 ## Projet réalisé par:
 
