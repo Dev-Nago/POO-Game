@@ -4,7 +4,9 @@ from modules.Wizard import *
 from modules.Warrior import *
 from modules.Archer import *
 
-def create_ia(nom_defendant):
+def create_ia():
+    nom_defendant = input("Quel est le nom de votre Rival ?\n")
+    time.sleep(2)
     liste = ["Magicien","Guerrier","Archer"]
     rivals = np.random.choice(liste)
 
