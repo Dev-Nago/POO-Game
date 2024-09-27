@@ -17,7 +17,7 @@ def game(attacker,defendant):
     print("Que le combat commence...\n")
     time.sleep(2)
 
-    while attacker.check_death(defendant) or defendant.check_death(attacker):
+    while attacker.check_death(defendant,attacker) or defendant.check_death(attacker,defendant):
             player(attacker,defendant)
             ia(defendant,attacker)
         

@@ -2,18 +2,19 @@ from modules.Character import *
 import time
 
 class Warrior(Character):
-    def __init__(self, name) -> None:
+    def __init__(self, name,type) -> None:
         super().__init__(name)
         self.hp = 500
         self.defense = 120
         self.attack = 25
         self.special_attack = 3
+        self.type = type
 
     def whirlwind(self,attacker,defendant):
         if attacker.special_attack > 0:
             total_damage = 0
             for i in range(1,4):
-                damage = round(defendant.defense * attacker.attack / 40)
+                damage = round(defendant.defense * attacker.attack / 50)
                 total_damage += damage
                 actual_hp = round(defendant.hp - damage)
                 setattr(defendant,"hp",actual_hp)

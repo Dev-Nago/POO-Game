@@ -12,11 +12,11 @@ def create_player():
     classe = input("Choisir votre classe : A = Magicien, B = Guerrier, C = Archer\n")
     time.sleep(1)
     if classe == "A":
-        attacker = Wizard(nom_attacker)
+        attacker = Wizard(nom_attacker,"JOUEUR")
     elif classe == "B":
-        attacker = Warrior(nom_attacker)
+        attacker = Warrior(nom_attacker,"JOUEUR")
     elif classe == "C":
-        attacker = Archer(nom_attacker)
+        attacker = Archer(nom_attacker,"JOUEUR")
     else : 
         print("!!!! Cette classe n'existe pas.... !!!! Seulement (A,B,C), Exit...\n")
         sys.exit()

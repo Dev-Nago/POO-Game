@@ -11,9 +11,9 @@ def create_ia():
     rivals = np.random.choice(liste)
 
     if rivals == "Magicien":
-        defendant = Wizard(nom_defendant)
+        defendant = Wizard(nom_defendant,"IA")
     elif rivals == "Warrior":
-        defendant = Warrior(nom_defendant)
+        defendant = Warrior(nom_defendant,"IA")
     else:
-        defendant = Archer(nom_defendant)
+        defendant = Archer(nom_defendant,'IA')
     return defendant

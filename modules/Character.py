@@ -5,11 +5,14 @@ class Character:
         self.name = name
         self.potion = 3
 
-    def check_death(self,defendant):
+
+    def check_death(self,defendant,attacker):
         if getattr(defendant,"hp") < 1:
-            print("Le personnage ",defendant.name," est mort.")
-            print("*** Bravo ***")
-            print("Partie Terminée. Exit...")
+            print("==========================================================================")
+            print("             Le personnage ",defendant.name,"(",defendant.type,")"," est mort.")
+            print("         *** ",attacker.name,"(",attacker.type,")"," est le grand vainqueur ! ***")
+            print("                     Partie Terminée. Exit...")
+            print("==========================================================================")
             sys.exit()
             return False
         else:

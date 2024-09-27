@@ -13,24 +13,26 @@ def player(attacker,defendant):
         if attaque == "A":
             print("--- JOUEUR ---")
             attacker.normal_attack(attacker,defendant)
-            attacker.check_death(defendant)
+            attacker.check_death(defendant,attacker)
         elif attaque == "B":
             if attacker.__class__.__name__ == "Wizard":
                 print("--- JOUEUR ---")
                 attacker.blizzard(attacker,defendant)
-                attacker.check_death(defendant)
+                attacker.check_death(defendant,attacker)
             if attacker.__class__.__name__ == "Warrior":
                 print("--- JOUEUR ---")
                 attacker.whirlwind(attacker,defendant)
-                attacker.check_death(defendant)           
+                attacker.check_death(defendant,attacker)           
             if attacker.__class__.__name__ == "Archer":
                 print("--- JOUEUR ---")
                 attacker.salve(attacker,defendant)
-                attacker.check_death(defendant)
+                attacker.check_death(defendant,attacker)
         elif attaque == "C":
+            print("--- JOUEUR ---")
             attacker.boost_attack(attacker)
         elif attaque == "D":
+             print("--- JOUEUR ---")
              attacker.healthPotion(attacker)
         else:
-            print("Mauvaise Lettre, A ou B seulelment.\n")
+            print("Mauvaise Lettre, A,B,C,D uniquement.\n")
         ######### JOUEUR #########
